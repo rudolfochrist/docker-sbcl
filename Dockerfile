@@ -27,7 +27,7 @@ RUN mkdir -p /usr/local/src/sbcl \
 
 FROM debian:stable-slim
 LABEL "maintainer"="Sebastian Christ"
-LABEL "version"="2.4.9-b1"
+LABEL "version"="2.4.9"
 
 COPY --from=build /usr/local/bin/sbcl /usr/local/bin/sbcl
 COPY --from=build /usr/local/lib/sbcl /usr/local/lib/sbcl
