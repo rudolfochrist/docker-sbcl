@@ -33,5 +33,5 @@ jobs:
           tags: |
             crapware/sbcl:latest
             crapware/sbcl:${{ github.ref_name }}
-            ghcr.io/rudolfochrist/sbcl:latest
-            ghcr.io/rudolfochrist/sbcl:${{ github.ref_name  }}
+            ghcr.io/rudolfochrist/docker-sbcl:latest
+            ghcr.io/rudolfochrist/docker-sbcl:${{ github.ref_name  }}
