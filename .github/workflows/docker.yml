@@ -32,6 +32,6 @@ jobs:
           push: true
           tags: |
             crapware/sbcl:latest
-            crapware/sbcl:${{ github.ref }}
+            crapware/sbcl:${{ github.ref_name }}
             ghcr.io/rudolfochrist/sbcl:latest
-            ghcr.io/rudolfochrist/sbcl:${{ github.ref  }}
+            ghcr.io/rudolfochrist/sbcl:${{ github.ref_name  }}
