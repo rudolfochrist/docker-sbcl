@@ -9,7 +9,7 @@ RUN apt update \
     build-essential
 
 # install SBCL
-ENV SBCL_VERSION 2.4.9
+ENV SBCL_VERSION 2.5.8
 ENV SBCL_SIGN_KEY D6839CA0A67F74D9DFB70922EBD595A9100D63CD
 
 RUN mkdir -p /usr/local/src/sbcl \
@@ -27,7 +27,7 @@ RUN mkdir -p /usr/local/src/sbcl \
 
 FROM debian:stable-slim
 LABEL "maintainer"="Sebastian Christ"
-LABEL "version"="2.4.9"
+LABEL "version"="2.5.8"
 
 COPY --from=build /usr/local/bin/sbcl /usr/local/bin/sbcl
 COPY --from=build /usr/local/lib/sbcl /usr/local/lib/sbcl
