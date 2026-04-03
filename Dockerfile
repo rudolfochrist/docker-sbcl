@@ -9,7 +9,7 @@ RUN apt update \
     build-essential
 
 # install SBCL
-ENV SBCL_VERSION 2.6.0
+ENV SBCL_VERSION 2.6.3
 ENV SBCL_SIGN_KEY D6839CA0A67F74D9DFB70922EBD595A9100D63CD
 
 RUN mkdir -p /usr/local/src/sbcl \
